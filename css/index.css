@@ -1,0 +1,208 @@
+:root{
+    --primary:#fe5e35;
+    --secondary:#000000;
+    --third:#afafaf;
+    --fourth:#ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredoka One';
+    margin: 8px 50px;
+    overflow-x: hidden;
+}
+
+/* nav  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>img{
+    height: 35px;
+}
+
+.nav-items{
+    display: flex;
+}
+
+.nav-item{
+    display: flex;
+    margin: 0px 40px;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Poppins;
+}
+
+nav>img+div+img{
+    height: 43px;
+    margin: 0px -96px;
+}
+
+.active-item{
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+/* intro-section */
+
+.intro-section{
+    display: flex;
+}
+
+/* left section  */
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-section h3{
+    font-family: 'Poppins';
+    margin-top: 57px;
+    font-size: 30px;
+}
+
+.left-section h3 img{
+    height: 35px;
+}
+
+.left-section>h3+h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.sub-headlines {
+    font-size: 22px;
+    font-family: 'Poppins';
+    align-items: center;
+    margin-left: 53px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.sub-headline{
+    align-items: center;
+    display: flex;
+    margin: 19px;
+
+}
+
+.sub-headlines img{
+    background-color: var(--primary);
+    border-radius: 40px;
+    padding: 6px;
+    height: 25px;
+    margin-right:12px ;
+}
+
+.text{
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: var(--third);
+    width: 38rem;
+}
+.action-btns{
+    margin-top: 39px;
+}
+
+.action-btn{
+    padding: 12px 22px;
+    border-radius: 40px;
+    border: none;
+    background-color: var(--primary);
+    color: var(--fourth);
+    font-size: 17px;
+    font-family: 'Poppins';
+    margin-right: 26px;
+}
+
+/* right section  */
+
+.head phone-div{
+    display: flex;
+    flex-direction: column;
+    height: 76vh;
+}
+
+
+.discount{
+    position: relative;
+    z-index: 1;
+    top: 16rem;
+    height: 137px;
+    left: 66px;
+    filter: drop-shadow(4px 7px 1px rgba(0,0,0,0.3));
+}
+
+.headphone-div> img+div+img {
+    position: relative;
+    bottom: 190px;
+    height: 444px;
+    display: block;
+    left: 112px;
+    z-index: 0;
+}
+
+.discount-content{
+    position: relative;
+    top: 157px;
+    left: 104px;
+    z-index: 2;
+    font-size: 16px;
+    color: var(--fourth);
+}
+
+.dots{
+    display: flex;
+    position: relative;
+    bottom: 179px;
+    justify-content: center;
+}
+
+.dot{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 12px;
+    position: relative;
+    left: 111px;
+}
+
+.yellow-dot{
+    height: 22px;
+    border: 2px solid #ffff00;
+    border-radius: 73px;
+    width: 23px;
+    background-color: yellow;
+}
+
+.tomato-dot{
+    border: 2px solid #ff6347; 
+    height: 22px;
+    border-radius: 73px;
+    width: 23px;
+    background-color: #ff6347;
+}
+
+.black-dot{
+    
+    border: 2px solid var(--secondary); 
+    height: 22px;
+    border-radius: 73px;
+    width: 23px;
+    background-color: var(--secondary);
+}
+
+.right-section >div+div+button{
+    position: relative;
+    left: 259px;
+    bottom: 153px;
+    cursor: pointer;
+}
