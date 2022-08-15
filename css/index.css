@@ -31,6 +31,7 @@ nav>img{
 
 .nav-items{
     display: flex;
+    align-items: center;
 }
 
 .nav-item{
@@ -39,11 +40,11 @@ nav>img{
     font-size: 18px;
     font-weight: normal;
     font-family: Poppins;
+    
 }
 
-nav>img+div+img{
-    height: 43px;
-    margin: 0px -96px;
+nav>img+div>img{
+    height: 29px;
 }
 
 .active-item{
@@ -51,10 +52,7 @@ nav>img+div+img{
     font-weight: bolder;
 }
 
-.bar{
-    height: 20px;
-    display: none;
-}
+
 
 /* intro-section */
 
@@ -307,17 +305,14 @@ nav>img+div+img{
 @media screen and (max-width: 959px){
     /* nav  */
 .nav-items {
-    display: none;
+
 }
 
 nav>img+div+img {
     height: 43px;
     margin: 0px -96px;
-    display: none;
 }
-.bar{
-    display:block ;
-}
+
 }
 
 
@@ -328,13 +323,29 @@ nav>img+div+img {
     
     /* nav */
 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .nav-item{
+        margin: 9px 18px;
+    }
+
+    .nav-items {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
         nav>img {
             height: 30px;
         }
     
-        .bar {
-            height: 16px;
-        }
+        
 
         /* left */
 
@@ -378,6 +389,13 @@ nav>img+div+img {
 
 
  @media screen and (max-width:414px) {
+
+    nav>img+div>img {
+        position: relative;
+        left: 12px;
+    }
+
+
     .left-section h3{
         margin-left: 179px;
     }
