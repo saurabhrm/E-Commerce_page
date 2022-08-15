@@ -1,6 +1,7 @@
 #  **Saurabh Mehare**
 
 >### What learn in this project?
+- use media query in css for the mobile responsive
 - filter property of drop Shadow
 - overflow property
 - z-index

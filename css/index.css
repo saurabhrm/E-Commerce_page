@@ -51,6 +51,11 @@ nav>img+div+img{
     font-weight: bolder;
 }
 
+.bar{
+    height: 20px;
+    display: none;
+}
+
 /* intro-section */
 
 .intro-section{
@@ -206,3 +211,235 @@ nav>img+div+img{
     bottom: 153px;
     cursor: pointer;
 }
+
+@media screen and (min-width: 1312px) {
+    .right-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .headphone-div> img+div+img{
+        position: relative;
+        bottom: 190px;
+        height: 444px;
+        display: block;
+        left: 242px;
+        z-index: 0;
+    }
+
+    .discount {
+        position: relative;
+        z-index: 1;
+        top: 16rem;
+        height: 137px;
+        left: 199px;
+        filter: drop-shadow(4px 7px 1px rgba(0,0,0,0.3));
+    }
+
+    .discount-content {
+        position: relative;
+        top: 157px;
+        left: 234px;
+        z-index: 2;
+        font-size: 16px;
+        color: var(--fourth);
+    }
+
+    .dots {
+        display: flex;
+        position: relative;
+        bottom: 179px;
+        justify-content: center;
+        left: 127px;
+    }
+  }
+
+  
+@media screen and (max-width: 1079px)  {
+
+    /* left section  */
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ /* right section  */
+
+ .left-section h3 {
+    font-family: 'Poppins';
+    margin-top: 57px;
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    right: 176px;
+}
+
+    .right-section{
+        margin-top: 68px;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        right: 100px;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dots {
+        display: flex;
+        position: relative;
+        bottom: 179px;
+    }
+
+    .right-section >div+div+button {
+        position: relative;
+        left: 132px;
+        bottom: 153px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 959px){
+    /* nav  */
+.nav-items {
+    display: none;
+}
+
+nav>img+div+img {
+    height: 43px;
+    margin: 0px -96px;
+    display: none;
+}
+.bar{
+    display:block ;
+}
+}
+
+
+
+
+
+@media screen and (max-width: 684px){
+    
+    /* nav */
+
+        nav>img {
+            height: 30px;
+        }
+    
+        .bar {
+            height: 16px;
+        }
+
+        /* left */
+
+    .left-section h3 {
+        font-family: 'Poppins';
+        margin-top: 57px;
+        font-size: 128%;
+        display: flex;
+        position: relative;
+        margin-left: 159px;
+    }
+
+    .left-section>h3+h1 {
+        font-size: 240%;
+        font-weight: 100;
+    }
+
+    .sub-headlines img {
+    height: 21px;
+}
+    
+    .sub-headlines {
+    font-size: 17px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 95%;
+    }
+
+    .action-btn{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    
+    .left-section h3 img {
+        height: 24px;
+    }
+
+}
+
+
+ @media screen and (max-width:414px) {
+    .left-section h3{
+        margin-left: 179px;
+    }
+
+
+    /* right  */
+
+    .headphone-div> img+div+img {
+        height: 320px;
+    }
+
+    .discount{
+        top: 10rem;
+    height: 99px;
+    left: 78px;
+    }
+
+    .discount-content{
+        top: 89px;
+    left: 108px;
+    font-size: 11px;
+    }
+ } 
+
+
+ @media screen and (max-width:280px){
+    .left-section h3 {
+        margin-left: 257px;
+    }
+
+
+    .sub-headlines {
+        margin: 20px 0px;
+    }
+
+    .action-btns {
+        margin-top: 39px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action-btn{
+        margin: 5px 0px;
+    }
+
+    .headphone-div> img+div+img {
+        height: 223px;
+    }
+
+    .discount {
+        top: 4rem;
+        height: 74px;
+        left: 78px;
+    }
+
+    .discount-content {
+        top: 7px;
+        left: 99px;
+        font-size: 9px;
+    }
+
+    .left-section {
+        margin-bottom: 94px;
+    }
+ }
